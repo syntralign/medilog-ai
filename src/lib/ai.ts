@@ -29,7 +29,7 @@ async function chatJSON(system: string, user: string): Promise<Record<string, un
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
       body: JSON.stringify({
-        model: process.env.OPENAI_MODEL || "llama-3.3-70b-versatile",
+        model: process.env.OPENAI_MODEL || "openai/gpt-oss-120b",
         temperature: 0.3,
         response_format: { type: "json_object" },
         messages: [
