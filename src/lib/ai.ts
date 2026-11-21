@@ -25,7 +25,7 @@ async function chatJSON(system: string, user: string): Promise<Record<string, un
   }
   let res: Response;
   try {
-    res = await fetch("https://api." + "://groq.com", {
+    res = await fetch("https://api.groq.com/openai/v1/chat/completions", {
       method: "POST",
       headers: { "Content-Type": "application/json", Authorization: `Bearer ${key}` },
       body: JSON.stringify({
