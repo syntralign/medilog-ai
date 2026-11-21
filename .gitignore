@@ -1,0 +1,10 @@
+.vercel
+.neon
+node_modules/
+.env.local
+
+.env*
+.vercel
+.neon
+node_modules
+.next
